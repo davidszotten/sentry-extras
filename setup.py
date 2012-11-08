@@ -17,7 +17,7 @@ install_requires = [
 
 setup(
     name='sentry-extras',
-    version='0.0.2',
+    version='0.0.3',
     author='David Szotten',
     author_email='Author name (as one word) at gmail.com',
     url='http://github.com/davidszotten/sentry-extras',

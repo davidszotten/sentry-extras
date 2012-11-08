@@ -1,4 +1,5 @@
 import sentry_extras
+from sentry_extras.filters import LevelAndAboveFilter
 from sentry.plugins import Plugin
 
 class SentryExtras(Plugin):
@@ -11,4 +12,4 @@ class SentryExtras(Plugin):
     author_url = 'https://github.com/davidszotten/sentry_extras'
 
     def get_filters(self, project=None, **kwargs):
-        return [sentry_extras.filters.LevelAndAbove]
+        return [LevelAndAboveFilter]

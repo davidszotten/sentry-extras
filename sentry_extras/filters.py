@@ -14,7 +14,7 @@ from sentry.conf import settings
 from sentry.filters import SentryFilter
 
 
-class LevelFilter(SentryFilter):
+class LevelAndAboveFilter(SentryFilter):
     label = 'Level (and above)'
     column = 'level'
 
