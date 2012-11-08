@@ -17,6 +17,7 @@ from sentry.filters import SentryFilter
 class LevelAndAboveFilter(SentryFilter):
     label = 'Level (and above)'
     column = 'level'
+    query_param = 'level_and'
 
     def get_choices(self):
         return SortedDict((str(k), v) for k, v in settings.LOG_LEVELS)
