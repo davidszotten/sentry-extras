@@ -10,5 +10,5 @@ class SentryExtras(Plugin):
     author = 'David Szotten'
     author_url = 'https://github.com/davidszotten/sentry_extras'
 
-    def get_filters(project=None, **kwargs):
+    def get_filters(self, project=None, **kwargs):
         return [sentry_extras.filters.LevelAndAbove]
