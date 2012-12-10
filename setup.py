@@ -17,7 +17,7 @@ install_requires = [
 
 setup(
     name='sentry-extras',
-    version='0.0.4',
+    version='0.0.5',
     author='David Szotten',
     author_email='Author name (as one word) at gmail.com',
     url='http://github.com/davidszotten/sentry-extras',
@@ -30,7 +30,7 @@ setup(
     include_package_data=True,
     entry_points={
        'sentry.plugins': [
-            'pluginname = sentry_extras.plugin:SentryExtras'
+            'sentry_extras = sentry_extras.plugin:SentryExtras'
         ],
     },
 )
